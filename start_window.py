@@ -60,7 +60,7 @@ class Start:
         self.score_sp.sort(key=lambda x: x[1], reverse=True)
         self.score_sp = self.score_sp[:10]
         self.score_x = 10
-        self.score_y = 10
+        self.score_y = 35
 
         while self.running:
             for event in pygame.event.get():
@@ -119,7 +119,7 @@ class Start:
                 text_score = self.font_score.render(text_score, True, self.text_color)
                 self.screen.blit(text_score, (self.score_x, self.score_y))
                 self.score_y += 25
-            self.score_y = 10
+            self.score_y = 35
 
     def start(self):
         from game_for_yandex import run
